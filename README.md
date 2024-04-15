@@ -40,7 +40,7 @@ const TailwindConfig: Config = {
       prefix: '',
     },
   },
-  plugins: [require('./plugin-debug-breakpoints')],
+  plugins: [require('tailwind-debug-breakpoints')],
 }
 
 export default TailwindConfig
