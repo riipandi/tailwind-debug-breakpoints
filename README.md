@@ -2,7 +2,7 @@
 
 A Tailwind CSS plugin that display the currently active screen (responsive breakpoint).
 
-![Screenshot](./screenshot.jpeg)
+<!-- ![Screenshot](./screenshot.jpeg) -->
 
 ## Installation
 
