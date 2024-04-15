@@ -1,0 +1,81 @@
+{
+    "name": "tailwind-debug-breakpoints",
+    "version": "1.0.0",
+    "description": "A Tailwind CSS plugin that display the currently active screen (responsive breakpoint).",
+    "keywords": [
+        "tailwindcss",
+        "plugin",
+        "responsive",
+        "breakpoint",
+        "debug"
+    ],
+    "license": "MIT",
+    "author": "Aris Ripandi <aris@duck.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/riipandi/tailwind-debug-breakpoints.git"
+    },
+    "bugs": {
+        "url": "https://github.com/riipandi/tailwind-debug-breakpoints/issues"
+    },
+    "homepage": "https://github.com/riipandi/tailwind-debug-breakpoints#readme",
+    "sideEffects": false,
+    "main": "dist/index.js",
+    "files": [
+        "dist/**"
+    ],
+    "scripts": {
+        "dev": "tsup --watch",
+        "build": "tsup --config tsup.config.ts",
+        "format": "prettier --write . --log-level warn",
+        "release": "pnpm build && changeset publish",
+        "version-packages": "changeset version",
+        "changeset": "changeset"
+    },
+    "peerDependencies": {
+        "tailwindcss": ">=3.3.3"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.27.1",
+        "prettier": "^3.2.5",
+        "tailwindcss": "^3.4.3",
+        "tsup": "^8.0.2",
+        "typescript": "^5.4.5"
+    },
+    "prettier": {
+        "arrowParens": "always",
+        "bracketSpacing": true,
+        "bracketSameLine": false,
+        "printWidth": 80,
+        "quoteProps": "consistent",
+        "singleQuote": true,
+        "semi": false,
+        "tabWidth": 2,
+        "trailingComma": "es5",
+        "useTabs": false,
+        "overrides": [
+            {
+                "files": [
+                    "*.json"
+                ],
+                "options": {
+                    "tabWidth": 4
+                }
+            },
+            {
+                "files": [
+                    "Makefile",
+                    "*.mk"
+                ],
+                "options": {
+                    "useTabs": true,
+                    "tabWidth": 4
+                }
+            }
+        ]
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org",
+        "access": "public"
+    }
+}
