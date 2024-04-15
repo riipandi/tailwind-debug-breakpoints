@@ -24,6 +24,8 @@ yarn add --dev tailwind-debug-breakpoints
 pnpm add -D tailwind-debug-breakpoints
 ```
 
+Then, add class `debug-breakpoints` on body element to display breakpoint information.
+
 ### Tailwind Configuration
 
 ```ts

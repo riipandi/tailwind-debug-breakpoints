@@ -2,4 +2,4 @@
 "tailwind-debug-breakpoints": patch
 ---
 
-Update README.md
+Update installation instruction
